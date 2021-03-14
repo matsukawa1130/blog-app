@@ -32,11 +32,12 @@ class ArticlesController < ApplicationController
     flash.now[:error] = '更新できませんでした'
     render :edit
  end
-end
+ 
 
 
  private
  def article_params
     params.require(:article).permit(:title, :content)
  end
+end
 end
