@@ -37,7 +37,7 @@ end
 def destroy
     article = Article.find(params[:id])
     article.destroy!
-    redirect_to root_path, notice: '削除に成功しました' 
+    
 end
 
 
