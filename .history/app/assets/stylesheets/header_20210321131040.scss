@@ -15,18 +15,20 @@ $back-icon-size: 16px;
     color: white;
   }
 
-    &_loginBtn {
-    background-color: $base-bg-color;
-    height: $avatar-size;
-    border-radius: 8px;
-    font-size: 12px;
-    padding: 12px 16px;
-    color: $primary-color;
-    }
+  &_loginBtn {
+  background-color: $base-bg-color;
+  height: $avatar-size;
+  border-radius: 8px;
+  font-size: 12px;
+  padding: 12px 16px;
+  color: $primary-color;
+  margin-left: 270px;
+  margin-bottom: 100px;
+  }
 
-    &_logos {
-      min-width: 0;
-      display: flex;
+  &_logos {
+    min-width: 0;
+    display: flex;
 
     img {
       cursor: pointer;

@@ -9,11 +9,11 @@ class ArticlesController < ApplicationController
   def show; end
 
   def new
-    @article = current_user.articles.build
+    @article = current
   end
 
   def create
-    @article = current_user.articles.build(article_params)
+    @article = Article.new(article_params)
     if @article.save
       redirect_to article_path(@article), notice: '保存できたよ'
     else

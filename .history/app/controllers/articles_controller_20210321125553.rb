@@ -13,7 +13,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @article = current_user.articles.build(article_params)
+    @article = current_user.articles(article_params)
     if @article.save
       redirect_to article_path(@article), notice: '保存できたよ'
     else
