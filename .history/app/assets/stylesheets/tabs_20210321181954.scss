@@ -12,16 +12,9 @@
     text-align: center;
     cursor: pointer;
 
-    a {
-      display: block;
-    }
-
     &.active {
       background-color: $primary-color;
-
-      a {
-        color: white;
-      }
+      color: white;
     }
 
     &:hover {
